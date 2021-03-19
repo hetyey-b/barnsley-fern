@@ -88,43 +88,43 @@
             </tr>
             <tr>
                 <th>f1</th>
-                <td><input id="f1_a" type="number" step="0.01"></td>
-                <td><input id="f1_b" type="number" step="0.01"></td>
-                <td><input id="f1_c" type="number" step="0.01"></td>
-                <td><input id="f1_d" type="number" step="0.01"></td>
-                <td><input id="f1_e" type="number" step="0.01"></td>
-                <td><input id="f1_f" type="number" step="0.01"></td>
-                <td class="pColumn"><input id="f1_p" type="number" step="0.01"></td>
+                <td><input id="f1_a" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f1_b" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f1_c" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f1_d" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f1_e" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f1_f" type="number" step="0.01" class="fernParam"></td>
+                <td class="pColumn"><input id="f1_p" type="number" step="0.01" class="fernParam"></td>
             </tr>
             <tr>
                 <th>f2</th>
-                <td><input id="f2_a" type="number" step="0.01"></td>
-                <td><input id="f2_b" type="number" step="0.01"></td>
-                <td><input id="f2_c" type="number" step="0.01"></td>
-                <td><input id="f2_d" type="number" step="0.01"></td>
-                <td><input id="f2_e" type="number" step="0.01"></td>
-                <td><input id="f2_f" type="number" step="0.01"></td>
-                <td class="pColumn"><input id="f2_p" type="number" step="0.01"></td>
+                <td><input id="f2_a" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f2_b" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f2_c" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f2_d" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f2_e" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f2_f" type="number" step="0.01" class="fernParam"></td>
+                <td class="pColumn"><input id="f2_p" type="number" step="0.01" class="fernParam"></td>
             </tr>
             <tr>
                 <th>f3</th>
-                <td><input id="f3_a" type="number" step="0.01"></td>
-                <td><input id="f3_b" type="number" step="0.01"></td>
-                <td><input id="f3_c" type="number" step="0.01"></td>
-                <td><input id="f3_d" type="number" step="0.01"></td>
-                <td><input id="f3_e" type="number" step="0.01"></td>
-                <td><input id="f3_f" type="number" step="0.01"></td>
-                <td class="pColumn"><input id="f3_p" type="number" step="0.01"></td>
+                <td><input id="f3_a" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f3_b" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f3_c" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f3_d" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f3_e" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f3_f" type="number" step="0.01" class="fernParam"></td>
+                <td class="pColumn"><input id="f3_p" type="number" step="0.01" class="fernParam"></td>
             </tr>
             <tr>
                 <th>f4</th>
-                <td><input id="f4_a" type="number" step="0.01"></td>
-                <td><input id="f4_b" type="number" step="0.01"></td>
-                <td><input id="f4_c" type="number" step="0.01"></td>
-                <td><input id="f4_d" type="number" step="0.01"></td>
-                <td><input id="f4_e" type="number" step="0.01"></td>
-                <td><input id="f4_f" type="number" step="0.01"></td>
-                <td class="pColumn"><input id="f4_p" type="number" step="0.01"></td>
+                <td><input id="f4_a" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f4_b" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f4_c" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f4_d" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f4_e" type="number" step="0.01" class="fernParam"></td>
+                <td><input id="f4_f" type="number" step="0.01" class="fernParam"></td>
+                <td class="pColumn"><input id="f4_p" type="number" step="0.01" class="fernParam"></td>
             </tr>
         </table>
 
@@ -134,14 +134,19 @@
                 <button id="barnsley">Barnsley fern</button>
                 <!--src: wikipedia-->
                 <button id="cyclosorus">Cyclosorus</button>
-                <!--src: https://www.chradams.co.uk/fern/maker.html-->
-                <button id="cuclita">Culcita</button>
+                <!--src: https://www.chradams.co.uk/fern/maker.html -->
+                <button id="culcita">Culcita</button>
                 <button id="fishbone">Fishbone</button>
-                <button id="fractalTree">Fractal Tree</button>
             </div>
         </div>
 
-        <button id="generate">Generate</button>
+        <div id="miscControls">
+            <div id="checkBox">
+                <input type="checkbox" id="autoUpdate" name="autoUpdate">
+                <label for="autoUpdate">Auto update fern</label>
+            </div>
+            <button id="generate">Generate</button>
+        </div>
     </div>
 
 
