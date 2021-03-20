@@ -34,6 +34,9 @@ const fishbone_p2 = 0.84
 const fishbone_p3 = 0.07
 const fishbone_p4 = 0.07
 
+const CANVAS_BACKGROUND_COLOR = "white"
+const CANVAS_FERN_COLOR = "darkgreen"
+
 const canvas = document.querySelector("canvas")
 const ctx = canvas.getContext("2d")
 
@@ -100,7 +103,7 @@ function barnsley() {
     let h = canvas.height
     let x=0.,y=0.,xw=0.,yw=0.,r
 
-    ctx.fillStyle = "white";
+    ctx.fillStyle = CANVAS_BACKGROUND_COLOR;
     ctx.fillRect(0, 0, w, h);    
 
     const treshold1 = (chances[0]) * 100
@@ -146,7 +149,7 @@ function barnsley() {
         }
         x = xw;
         y = yw;
-        ctx.fillStyle = "green";
+        ctx.fillStyle = CANVAS_FERN_COLOR;
         ctx.fillRect(x * 50 + (h/2), -y * 50 + w, 1, 1);
     }
     console.log("loop over with i: " + i)
